@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Head from "next/head";
-import Test from "../components/test";
+import Test from "src/components/test";
 import Router from "next/router";
 
 export default function Home() {

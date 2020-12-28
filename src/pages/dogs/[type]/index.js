@@ -2,7 +2,7 @@ import { http_get } from "@twodashes/node/cjs/requests";
 import { str_capitalize } from "@twodashes/universal/cjs/string";
 import Head from "next/head";
 import Link from "next/link";
-import { MainStyled } from "../styled.js";
+import { MainStyled } from "src/pages.styled/dogs";
 
 export default function Home({ dog = {} }) {
   let breeds = dog.breeds || [];

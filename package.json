@@ -4,12 +4,24 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+    "build": "next build && next start",
+    "---------------- shortcuts: ---------------": "",
+    "start": "npm run dev",
+    "---------------- helpers: ---------------": "",
+    "build:css": "rm -rf static/css && parcel build assets/css/* && mv dist static/css"
   },
   "dependencies": {
+    "@twodashes/node": "file:/Users/admin/srv/twodashes/node",
+    "@twodashes/browser": "file:/Users/admin/srv/twodashes/browser",
+    "@twodashes/universal": "^0.4.5",
+    "level": "^6.0.1",
     "next": "10.0.0",
     "react": "17.0.1",
-    "react-dom": "17.0.1"
+    "react-dom": "17.0.1",
+    "sass": "^1.30.0",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^1.12.0"
   }
 }

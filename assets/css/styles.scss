@@ -1,0 +1,20 @@
+a,
+.link {
+  color: inherit;
+}
+a,
+.link {
+  text-decoration: underline;
+  * {
+    text-decoration: underline;
+  }
+  &:hover,
+  &:hover * {
+    text-decoration: none;
+  }
+}
+a,
+.link,
+.clickable {
+  cursor: pointer;
+}

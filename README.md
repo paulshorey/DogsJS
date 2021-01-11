@@ -1,3 +1,9 @@
+# Discover all the breeds / sub-breeds of dogs
+
+https://dogs.paulshorey.com
+
+(hosted on Vercel)
+
 # Why Dogs ?
 
 - This has been made possible by the awesome API at [dog.ceo](https://dog.ceo)
@@ -5,8 +11,6 @@
 - This was an experiment - to learn NextJS and test out dynamic routes (and sub-routes).
 
 It works very well. This site renders hundreds of different types of dogs - all nearly instantly (just have to wait for images to load, but the data is pre-loaded using the NextJS framework)
-
-Hosted on Vercel.
 
 ## Todo:
 

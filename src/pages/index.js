@@ -1,15 +1,15 @@
-import { useEffect } from "react";
+// import { useEffect } from "react";
 import Head from "next/head";
 import Test from "src/components/test";
-import Router from "next/router";
+// import Router from "next/router";
 
 export default function Home() {
-  useEffect(() => {
-    const { pathname } = Router;
-    if (pathname == "/") {
-      Router.push("/dogs");
-    }
-  });
+  // useEffect(() => {
+  //   const { pathname } = Router;
+  //   if (pathname == "/") {
+  //     Router.push("/dogs");
+  //   }
+  // });
   return (
     <div className="container">
       <Head>

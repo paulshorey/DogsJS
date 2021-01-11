@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="988a247f-1f19-4e7b-b42f-303641f32a33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,6 +78,8 @@
       <workItem from="1609812014948" duration="1079000" />
       <workItem from="1609822479463" duration="980000" />
       <workItem from="1609891346396" duration="8000" />
+      <workItem from="1609966028296" duration="372000" />
+      <workItem from="1610345868540" duration="447000" />
     </task>
     <servers />
   </component>
@@ -90,10 +94,11 @@
       <screen x="-1774" y="-1057" width="2560" height="1057" />
     </state>
     <state x="-652" y="-890" key="SettingsEditor/0.23.1440.877/-1774.-1057.2560.1057/786.-1057.1920.1057@-1774.-1057.2560.1057" timestamp="1608922407608" />
-    <state x="-453" y="-801" width="584" height="544" key="find.popup" timestamp="1608926738506">
-      <screen x="-1774" y="-1057" width="2560" height="1057" />
+    <state x="1735" y="-801" width="568" height="544" key="find.popup" timestamp="1609966416052">
+      <screen x="744" y="-1057" width="1920" height="1057" />
     </state>
     <state x="-453" y="-801" width="584" height="544" key="find.popup/0.23.1440.877/-1774.-1057.2560.1057/786.-1057.1920.1057@-1774.-1057.2560.1057" timestamp="1608926738506" />
+    <state x="1735" y="-801" width="568" height="544" key="find.popup/744.-1057.1920.1057/-1176.-1057.1920.1057/0.23.1440.877@744.-1057.1920.1057" timestamp="1609966416052" />
     <state x="-431" y="-684" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1608926849994">
       <screen x="-1774" y="-1057" width="2560" height="1057" />
     </state>

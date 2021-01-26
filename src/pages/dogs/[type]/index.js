@@ -1,10 +1,11 @@
 import { http_get } from "@twodashes/node/cjs/requests";
-import { str_capitalize } from "@twodashes/universal/cjs/string";
+import { str_capitalize } from "@twodashes/universal/umd/string";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
-import { MainStyled } from "src/pages.styled/dogs";
+import { MainStyled } from "src/pages.styled/dogs/dogs";
 
-export default function Home({ dog = {} }) {
+export default function({ dog = {} }) {
   let breeds = dog.breeds || [];
   let type = str_capitalize(dog.type);
   return (
@@ -19,25 +20,22 @@ export default function Home({ dog = {} }) {
 
       <MainStyled className="main">
         <p>
-          <Link href="/dogs">👈 back all dogs</Link>
+          <Link href="/dogs">
+            <a>👈👈 back all dogs</a>
+          </Link>
         </p>
         <h2>
           {breeds.length > 1 && "Types of "}
-          <span className="capitalized">{type}</span>
+          <span className="capitalized">{type}:</span>
         </h2>
-        {breeds.length > 1 && (
-          <p>
-            Click each one to see more photos <span style={{ textShadow: "0 1px 1px rgba(0,0,0,0.5)" }}>👇</span>
-          </p>
-        )}
         <>
           {breeds.map((breed) => {
             return (
               <Link key={breed.type.toString()} className="blogitem" href={`/dogs/${breed.type.join("/")}`}>
-                <article>
+                <a>
                   <h3>{[...breed.type].reverse().join(" ")}</h3>
                   {getBreedImages(breed)}
-                </article>
+                </a>
               </Link>
             );
           })}
@@ -49,7 +47,17 @@ export default function Home({ dog = {} }) {
 
 function getBreedImages(breed) {
   if (!breed || !breed.images || !breed.images.map) return null;
-  return breed.images.map((img, i) => <img key={i} src={img} height="300" />);
+  return breed.images.map((img, i) => (
+    <span key={i} className="slide">
+      <Image
+        className="slideImage nextImage"
+        title={[...breed.type].reverse().join(" ")}
+        height="300"
+        width="300"
+        src={img}
+      />
+    </span>
+  ));
 }
 
 export async function getStaticPaths() {

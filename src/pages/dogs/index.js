@@ -1,8 +1,9 @@
 import { http_get } from "@twodashes/node/cjs/requests";
-import { sort_objects_by_property } from "@twodashes/universal/cjs/sort_objects";
+import { sort_objects_by_property } from "@twodashes/universal/umd/sort_objects";
 import Head from "next/head";
 import Link from "next/link";
-import { MainStyled } from "src/pages.styled/dogs";
+import { MainStyled } from "./styled";
+import DogsCarousel from "src/components/DogsCarousel";
 
 export default function Home({ dogs = [] }) {
   return (
@@ -13,23 +14,23 @@ export default function Home({ dogs = [] }) {
       </Head>
 
       <MainStyled className="main">
-        <h2>All the dogs:</h2>
-        <p>
-          Scroll down for many more! <span style={{ textShadow: "0 1px 1px rgba(0,0,0,0.5)" }}>👇</span> Click each type
-          for more info and more photos{" "}
-        </p>
+        <header>
+          <h2>All the dogs:</h2>
+          <p>
+            Scroll down for many more! <span style={{ textShadow: "0 1px 1px rgba(0,0,0,0.5)" }}>👇</span> Click each
+            breed or sub-breed to see more photos.{" "}
+          </p>
+        </header>
         <section>
           {dogs.map((dog) => {
             return (
-              <article>
+              <article key={dog.type}>
                 <h3>
-                  <Link key={dog.type} className="blogitem" href={`/dogs/${dog.type}`}>
+                  <Link className="blogitem" href={`/dogs/${dog.type}`}>
                     <a>{dog.type}s</a>
                   </Link>
                 </h3>
-                {/*<p className="preview">{dog.subtypes.join(", ")}</p>*/}
-                {getDogImages(dog)}
-                <hr />
+                <DogsCarousel breeds={dog.breeds} />
               </article>
             );
           })}
@@ -37,24 +38,6 @@ export default function Home({ dogs = [] }) {
       </MainStyled>
     </div>
   );
-}
-
-function getDogImages(dog) {
-  if (!dog.breeds || !dog.breeds[0] || !dog.breeds[0].images || !dog.breeds[0].images[0]) return null;
-  let Images = [];
-  for (let breed of dog.breeds) {
-    Images.push(
-      <Link className="subtypesImage" key={breed.type.toString()} href={`/dogs/${breed.type.join("/")}`}>
-        <a>
-          <span className="subtypesImage" key={breed.type.toString()}>
-            <img src={breed.images[0]} title={[...breed.type].reverse().join(" ")} height="150" />
-            <span className="breedImageCaption">{!!breed.type[1] && breed.type[1]}</span>
-          </span>
-        </a>
-      </Link>
-    );
-  }
-  return Images;
 }
 
 export async function getStaticProps(context) {

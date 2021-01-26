@@ -1,0 +1,31 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    "@babel/plugin-proposal-class-properties",
+    [
+      "transform-imports",
+      {
+        "@fortawesome/pro-solid-svg-icons": {
+          "transform": "@fortawesome/pro-solid-svg-icons/${member}.js",
+          "preventFullImport": true
+        },
+        "@fortawesome/pro-regular-svg-icons": {
+          "transform": "@fortawesome/pro-regular-svg-icons/${member}.js",
+          "preventFullImport": true
+        },
+        "@fortawesome/pro-light-svg-icons": {
+          "transform": "@fortawesome/pro-light-svg-icons/${member}.js",
+          "preventFullImport": true
+        },
+        "@fortawesome/free-brands-svg-icons": {
+          "transform": "@fortawesome/free-brands-svg-icons/${member}.js",
+          "preventFullImport": true
+        },
+        "lodash": {
+          "transform": "lodash/${member}",
+          "preventFullImport": true
+        }
+      }
+    ]
+  ]
+}

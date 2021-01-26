@@ -1,8 +1,9 @@
 import { http_get } from "@twodashes/node/cjs/requests";
 import Head from "next/head";
+import Image from "next/image";
 import Link from "next/link";
-import { str_capitalize } from "@twodashes/universal/cjs/string";
-import { MainStyled } from "src/pages.styled/dogs";
+import { str_capitalize } from "@twodashes/universal/umd/string";
+import { MainStyled } from "src/pages.styled/dogs/dogs";
 
 export default function Home({ dog = {} }) {
   let type = str_capitalize(dog.type);
@@ -18,6 +19,10 @@ export default function Home({ dog = {} }) {
 
       <MainStyled className="main">
         <p>
+          <Link href="/dogs">
+            <a>👈👈 back all dogs</a>
+          </Link>
+          &nbsp;&nbsp;
           <Link href={"/dogs/" + dog.type}>
             <a>👈 back to {type}s</a>
           </Link>
@@ -33,7 +38,17 @@ export default function Home({ dog = {} }) {
 
 function getDogImages(breed) {
   if (!breed || !breed.images || !breed.images.map) return null;
-  return breed.images.map((img, i) => <img key={i} src={img} height="300" />);
+  return breed.images.map((img, i) => (
+    <span key={i} className="slide">
+      <Image
+        className="slideImage nextImage"
+        title={[...breed.type].reverse().join(" ")}
+        height="400"
+        width="400"
+        src={img}
+      />
+    </span>
+  ));
 }
 
 export async function getStaticPaths() {

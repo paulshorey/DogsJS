@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { str_capitalize } from "@twodashes/universal/umd/string";
-import { MainStyled } from "src/pages.styled/dogs/dogs";
+import { MainStyled } from "src/styled_components/dogs";
 
 export default function Home({ dog = {} }) {
   let type = str_capitalize(dog.type);

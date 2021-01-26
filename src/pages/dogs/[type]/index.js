@@ -3,9 +3,9 @@ import { str_capitalize } from "@twodashes/universal/umd/string";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import { MainStyled } from "src/pages.styled/dogs/dogs";
+import { MainStyled } from "src/styled_components/dogs";
 
-export default function({ dog = {} }) {
+export default function ({ dog = {} }) {
   let breeds = dog.breeds || [];
   let type = str_capitalize(dog.type);
   return (

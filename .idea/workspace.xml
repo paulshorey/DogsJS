@@ -2,23 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="988a247f-1f19-4e7b-b42f-303641f32a33" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.eslintrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DogsCarousel/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/DogsCarousel/styled.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/next.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/next.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/test/index.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/test/styled.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages.styled/dogs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/styled.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/layout.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/reset.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dogs/[type]/[subtype].js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/[type]/[subtype].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dogs/[type]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/[type]/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dogs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/dogs/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled_components/dogs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,11 +55,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src" />
+      <recent name="$PROJECT_DIR$/src/styled" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/pages/dogs" />
       <recent name="$PROJECT_DIR$/src/pages.styled" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/pages.styled/dogs" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -96,7 +90,7 @@
       <workItem from="1610345868540" duration="1934000" />
       <workItem from="1611549568860" duration="11738000" />
       <workItem from="1611617439459" duration="283000" />
-      <workItem from="1611620009696" duration="4915000" />
+      <workItem from="1611620009696" duration="5188000" />
     </task>
     <servers />
   </component>

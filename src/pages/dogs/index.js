@@ -2,7 +2,7 @@ import { http_get } from "@twodashes/node/cjs/requests";
 import { sort_objects_by_property } from "@twodashes/universal/umd/sort_objects";
 import Head from "next/head";
 import Link from "next/link";
-import { MainStyled } from "./styled";
+import { MainStyled } from "src/styled_components/dogs";
 import DogsCarousel from "src/components/DogsCarousel";
 
 export default function Home({ dogs = [] }) {

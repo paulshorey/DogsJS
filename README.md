@@ -4,9 +4,8 @@ https://dogs.paulshorey.com (hosted on Vercel)
 
 # Why Dogs ?
 
-- This has been made possible by the awesome API at [dog.ceo](https://dog.ceo) - it's powerful and fun to use
-
-- This was an experiment - to learn NextJS techniques - to practice using dynamic routes (and sub-routes) with SSG/SSR
+1. This has been made possible by the awesome API at [dog.ceo](https://dog.ceo) - it's powerful and fun to use
+2. This was an experiment - to learn NextJS techniques - to practice using dynamic routes (and sub-routes) with SSG/SSR
 
 NextJS is a genius framework. This site renders hundreds of different types of dogs - all nearly instantly (even the images use NextJS `next/image` component, so are optimized for performance and a higher [Lighthouse](https://developers.google.com/web/tools/lighthouse) score)
 
@@ -21,7 +20,7 @@ Feel free to use this codebase to start you **next** project. Please contribute 
 
 This project uses NextJS infrastructure and a lot of server-side-generated content. Unit tests would be a big pain to set up, and are actually not recommended by the community. What's much easier and actually more effective? It's "end-to-end testing"! Also called "functional testing". This runs the app using "Puppeteer", a headless programmable Chrome browser. Execute whatever tests you want, to check that important content has been generated correctly, and important user-interactions are working.
 
-No more spending hours mocking data sources. Nothing to mock at all. It's real - same content the user will see. This "puppeteer" powered "functional testing" runs just as reliably and quickly as unit tests. Of course for some projects you may still want to use individual unit tests, but this is a good technique to keep in mind!
+> No more spending hours mocking data sources. Nothing to mock at all. It's real - same content the user will see. This "puppeteer" powered "functional testing" runs just as reliably and quickly as unit tests.
 
 Simply command: **`npm run test`**. This is already integrated into the CI process. Before you can do **`git commit`**, the tests will automatically run. If the tests fail, your commit will also fail.
 

@@ -31,7 +31,7 @@ Simply command: **`npm run test`**. This is already integrated into the CI proce
 "test": "npm run lint && npm run build && npm run test_start_server && npm run test_run_tests && npm run test_stop_server"
 ```
 
-These npm scripts may look scary, but it's actually very simple. 
+**These npm scripts may look scary, but it's actually very simple:**
 
 1. First, we **lint**, **build**, and start serving the app at port **:9754**.
 2. Then run tests

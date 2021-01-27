@@ -1,6 +1,6 @@
 # Discover all the breeds / sub-breeds of dogs
 
-https://dogs.paulshorey.com 
+### https://dogs.paulshorey.com
 (deployed to Vercel)
 
 # Why Dogs ?

@@ -24,7 +24,7 @@ This project uses NextJS infrastructure and a lot of server-side-generated conte
 > No more spending hours mocking data sources. Nothing to mock at all. It's real - same content the user will see. This "puppeteer" powered "functional testing" runs just as reliably and quickly as unit tests.
 
 ### Simply command: **`npm run test`** 
-Or ignore that and just **`git commit`** your changes. The testing is integrated into the CI process. The tests will automatically run. If the tests fail, the commit will also fail.
+**Or ignore that and just `git commit` your changes.** The testing is integrated into the CI process. The tests will automatically run. If the tests fail, the commit will also fail.
 
 1. First, the script runs **lint**, **build**, then starts serving the app at port **:9754**.
 2. Then it runs tests using `jest --verbose`. Jest is configured in `jest.config.js`

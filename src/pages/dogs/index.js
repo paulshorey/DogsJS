@@ -2,7 +2,7 @@ import { http_get } from "@twodashes/node/cjs/requests";
 import { sort_objects_by_property } from "@twodashes/universal/umd/sort_objects";
 import Head from "next/head";
 import Link from "next/link";
-import { MainStyled } from "src/styled_components/dogs";
+import { MainStyled } from "src/pages_styled/dogs";
 import DogsCarousel from "src/components/DogsCarousel";
 
 export default function Home({ dogs = [] }) {
@@ -17,8 +17,8 @@ export default function Home({ dogs = [] }) {
         <header>
           <h2>All the dogs:</h2>
           <p>
-            Scroll down for many more! <span style={{ textShadow: "0 1px 1px rgba(0,0,0,0.5)" }}>👇</span> Click each
-            breed or sub-breed to see more photos.{" "}
+            Scroll down for many more! <span style={{ textShadow: "0 1px 1px rgba(0,0,0,0.5)" }}>👇</span> &thinsp;Click
+            each breed or sub-breed to see more photos.{" "}
           </p>
         </header>
         <section>
@@ -26,8 +26,11 @@ export default function Home({ dogs = [] }) {
             return (
               <article key={dog.type}>
                 <h3>
-                  <Link className="blogitem" href={`/dogs/${dog.type}`}>
-                    <a>{dog.type}s</a>
+                  <Link href={`/dogs/${dog.type}`}>
+                    <a className="breed-title-link">
+                      <span>{dog.type}s</span>
+                      <span className="link-icon icon-dot-dot-dot" />
+                    </a>
                   </Link>
                 </h3>
                 <DogsCarousel breeds={dog.breeds} />

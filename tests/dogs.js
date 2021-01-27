@@ -1,9 +1,9 @@
-describe('Google', () => {
+describe('Dogs', () => {
   beforeAll(async () => {
-    await page.goto('https://google.com');
+    await page.goto('http://localhost:9754/dogs');
   });
 
-  it('should be titled "Google"', async () => {
-    await expect(page.title()).resolves.toMatch('Google');
+  it('should be titled "All the dogs"', async () => {
+    await expect(page.title()).resolves.toMatch('All the dogs');
   });
 });

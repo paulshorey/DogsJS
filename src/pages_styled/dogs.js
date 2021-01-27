@@ -29,6 +29,28 @@ export const MainStyled = styled.main`
   article {
     margin-bottom: 3rem;
   }
+  a.breed-title-link {
+    //text-decoration: none;
+    //> * {
+    //  text-decoration: underline;
+    //}
+    //&:hover {
+    //  text-decoration: none;
+    //  > * {
+    //    text-decoration: none;
+    //  }
+    //}
+    position: relative;
+    .link-icon {
+      text-decoration: none;
+      font-size: 150%;
+      opacity: 0.25;
+      line-height: 50%;
+      position: absolute;
+      top: calc(50% - 0.5rem);
+      padding: 0 0.33rem;
+    }
+  }
   /*
    * each slide
    */

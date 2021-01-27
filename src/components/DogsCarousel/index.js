@@ -52,8 +52,8 @@ export default class extends React.Component {
         <div className="horizontal_carousel" ref={this.carouselRef}>
           <div className="slides">{Images}</div>
           <div className="arrows">
-            <span className="arrow prev">&laquo;</span>
-            <span className="arrow next">&raquo;</span>
+            <span className="arrow prev"><span className="icon-chevron-left-light"/></span>
+            <span className="arrow next"><span className="icon-chevron-right-light"/></span>
           </div>
         </div>
       </StyledComponent>

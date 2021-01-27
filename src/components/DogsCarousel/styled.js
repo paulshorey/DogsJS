@@ -9,18 +9,7 @@ export default styled.div`
     position: relative !important;
     .slides {
       .slide {
-        width: 20%;
-      }
-    }
-    .arrow {
-      box-shadow: none !important;
-      text-shadow: 1px 2px 3px black, 1px 2px 15px black !important;
-      top: 33% !important;
-      &.prev {
-        left: 0.25rem !important;
-      }
-      &.next {
-        right: -0.85rem !important;
+        //width: 20%;
       }
     }
   }
@@ -41,13 +30,25 @@ export default styled.div`
       width: 60px;
       height: 60px;
       background: none;
-      font-size: 3.33rem;
-      line-height: 3rem;
-      color: white;
+      font-size: 2.25rem;
+      font-weight: bold;
+      line-height: 60px;
       background: var(--color-primary);
-      box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.5);
       border: none;
       outline: none;
+      background: white;
+      color: #111;
+      box-shadow: none !important;
+      top: 33% !important;
+      &.prev {
+        left: -0.5rem !important;
+        text-align: left;
+        text-indent: 1.7rem;
+      }
+      &.next {
+        right: -0.85rem !important;
+        text-indent: 0.2rem;
+      }
       svg {
         position: relative;
         top: -0.025rem;

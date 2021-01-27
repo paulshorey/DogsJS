@@ -3,16 +3,17 @@
   <component name="ChangeListManager">
     <list default="true" id="988a247f-1f19-4e7b-b42f-303641f32a33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/layout.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/layout.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/reset.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/reset.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/css/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/styles/styles.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DogsCarousel/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DogsCarousel/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/DogsCarousel/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/DogsCarousel/styled.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dogs/[type]/[subtype].js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/[type]/[subtype].js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dogs/[type]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/[type]/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/dogs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/dogs/styled.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/styled_components/dogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/styled_components/dogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages_styled/dogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/dogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/dogs.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +91,8 @@
       <workItem from="1610345868540" duration="1934000" />
       <workItem from="1611549568860" duration="11738000" />
       <workItem from="1611617439459" duration="283000" />
-      <workItem from="1611620009696" duration="5188000" />
+      <workItem from="1611620009696" duration="6614000" />
+      <workItem from="1611711915264" duration="5536000" />
     </task>
     <servers />
   </component>
@@ -115,6 +117,10 @@
     <state x="-453" y="-801" width="584" height="544" key="find.popup/0.23.1440.877/-1774.-1057.2560.1057/786.-1057.1920.1057@-1774.-1057.2560.1057" timestamp="1608926738506" />
     <state x="743" y="235" width="568" height="486" key="find.popup/0.23.1440.877@0.23.1440.877" timestamp="1611562495431" />
     <state x="1735" y="-801" width="568" height="544" key="find.popup/744.-1057.1920.1057/-1176.-1057.1920.1057/0.23.1440.877@744.-1057.1920.1057" timestamp="1609966416052" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1611717953330">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877/-567.-1057.2560.1057@0.23.1440.877" timestamp="1611717953330" />
     <state x="-431" y="-684" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1608926849994">
       <screen x="-1774" y="-1057" width="2560" height="1057" />
     </state>

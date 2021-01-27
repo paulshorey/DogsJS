@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
 import { str_capitalize } from "@twodashes/universal/umd/string";
-import { MainStyled } from "src/styled_components/dogs";
+import { MainStyled } from "src/pages_styled/dogs";
 
 export default function Home({ dog = {} }) {
   let type = str_capitalize(dog.type);
@@ -20,11 +20,11 @@ export default function Home({ dog = {} }) {
       <MainStyled className="main">
         <p>
           <Link href="/dogs">
-            <a>👈👈 back all dogs</a>
+            <a>👈👈&nbsp; back all dogs</a>
           </Link>
-          &nbsp;&nbsp;
+          &nbsp;&nbsp;&nbsp;
           <Link href={"/dogs/" + dog.type}>
-            <a>👈 back to {type}s</a>
+            <a>👈&nbsp; back to {type}s</a>
           </Link>
         </p>
         <h1>

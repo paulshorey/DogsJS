@@ -14,7 +14,7 @@ It works very well. This site renders hundreds of different types of dogs - all 
 
 Feel free to use this codebase to start you **next** project. Please contribute (fork/pull-request) any improvements. Please let me know what you think. I will appreciate any suggestions! ~ [Paul](https://paulshorey.com)
 
-Dev env: **`npm start`** will run `npm install && npm run dev`
+Dev env: **`npm start`** will run `npm install && npm run dev`\
 Preview: **`npm run build && npm run serve`** actually runs `next build` and `next start -p 3000`
 
 ## Testing :
@@ -22,8 +22,6 @@ Preview: **`npm run build && npm run serve`** actually runs `next build` and `ne
 This project uses NextJS infrastructure and a lot of server-side-generated content. Unit tests would be a big pain to set up, and are actually not recommended by the community. What's much easier and actually more effective? It's "end-to-end testing"! Also called "functional testing". This runs the app using "Puppeteer", a headless programmable Chrome browser. Execute whatever tests you want, to check that important content has been generated correctly, and important user-interactions are working.
 
 Simply command: **`npm run test`**. This is already integrated into the CI process. Before you can do **`git commit`**, the tests will automatically run. If the tests fail, your commit will also fail.
-
-### This may look scary, but it's not that bad:
 
 ```
 "test_start_server": "next start -p 9754 &",
@@ -33,7 +31,7 @@ Simply command: **`npm run test`**. This is already integrated into the CI proce
 ```
 
 1. First, we **lint**, **build**, and start serving the app at port **:9754**.
-2. Then the tests run.
+2. Then run tests
 3. Whether they succeed or fail, the server is stopped, so that it can repeat the process next time if necessary.
 4. If any tests fail (including the initial `lint`), you will see instructions about what needs to be fixed. If this was triggered by a `git commit`, it will not be allowed to execute until you fix the tests and run `git commit` again.
 

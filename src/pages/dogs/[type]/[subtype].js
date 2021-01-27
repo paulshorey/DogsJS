@@ -20,7 +20,7 @@ export default function Home({ dog = {} }) {
       <MainStyled className="main">
         <p>
           <Link href="/dogs">
-            <a>👈👈&nbsp; back all dogs</a>
+            <a>👈👈&nbsp; back to all dogs</a>
           </Link>
           &nbsp;&nbsp;&nbsp;
           <Link href={"/dogs/" + dog.type}>

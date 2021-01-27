@@ -1,6 +1,7 @@
 # Discover all the breeds / sub-breeds of dogs
 
-https://dogs.paulshorey.com (hosted on Vercel)
+https://dogs.paulshorey.com 
+(deployed to Vercel)
 
 # Why Dogs ?
 
@@ -23,7 +24,7 @@ This project uses NextJS infrastructure and a lot of server-side-generated conte
 > No more spending hours mocking data sources. Nothing to mock at all. It's real - same content the user will see. This "puppeteer" powered "functional testing" runs just as reliably and quickly as unit tests.
 
 ### Simply command: **`npm run test`** 
-Or ignore that and just **`git commit`** your changes. The testing is integrated into the CI process. Before **`git commit`**, the tests will automatically run. If the tests fail, the commit will also fail.
+Or ignore that and just **`git commit`** your changes. The testing is integrated into the CI process. The tests will automatically run. If the tests fail, the commit will also fail.
 
 1. First, the script runs **lint**, **build**, then starts serving the app at port **:9754**.
 2. Then it runs tests using `jest --verbose`. Jest is configured in `jest.config.js`
@@ -46,3 +47,7 @@ Helper scripts used by `npm run test`:
 "test_run_tests": "jest --verbose || npm run test_stop_server",
 "test_stop_server": "kill -9 $(lsof -i TCP:9754 | grep LISTEN | awk '{print $2}')"
 ```
+
+## Future plans:
+* **tests are not finished (just started)**
+* maybe - caching http requests in server-side - re-build the site with old data if it does not need to be updated

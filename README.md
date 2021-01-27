@@ -24,16 +24,24 @@ This project uses NextJS infrastructure and a lot of server-side-generated conte
 
 Simply command: **`npm run test`**. This is already integrated into the CI process. Before you can do **`git commit`**, the tests will automatically run. If the tests fail, your commit will also fail.
 
-```
-"test_start_server": "next start -p 9754 &",
-"test_run_tests": "jest --verbose || npm run test_stop_server",
-"test_stop_server": "kill -9 $(lsof -i TCP:9754 | grep LISTEN | awk '{print $2}')",
-"test": "npm run lint && npm run build && npm run test_start_server && npm run test_run_tests && npm run test_stop_server"
-```
-
-**These npm scripts may look scary, but it's actually very simple:**
-
 1. First, we **lint**, **build**, and start serving the app at port **:9754**.
 2. Then run tests
 3. Whether they succeed or fail, the server is stopped, so that it can repeat the process next time if necessary.
 4. If any tests fail (including the initial `lint`), you will see instructions about what needs to be fixed. If this was triggered by a `git commit`, it will not be allowed to execute until you fix the tests and run `git commit` again.
+
+This uses "husky" to add "pre-commit" or other hooks to your "git commit" command:
+```
+"husky": {
+  "hooks": {
+    "pre-commit": "npm run test"
+  }
+},
+"test": "npm run lint && npm run build && npm run test_start_server && npm run test_run_tests && npm run test_stop_server",
+```
+
+Helper scripts used by `npm run test`:
+```
+"test_start_server": "next start -p 9754 &",
+"test_run_tests": "jest --verbose || npm run test_stop_server",
+"test_stop_server": "kill -9 $(lsof -i TCP:9754 | grep LISTEN | awk '{print $2}')"
+```

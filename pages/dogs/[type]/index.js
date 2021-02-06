@@ -19,27 +19,31 @@ export default function ({ dog = {} }) {
       </Head>
 
       <MainStyled className="main">
-        <p>
-          <Link href="/dogs">
-            <a>👈👈&nbsp; back to all dogs</a>
-          </Link>
-        </p>
-        <h2>
-          {breeds.length > 1 && "Types of "}
-          <span className="capitalized">{type}:</span>
-        </h2>
-        <>
+        <header>
+          <p>
+            <Link href="/dogs">
+              <a>👈👈&nbsp; back to all dogs</a>
+            </Link>
+          </p>
+          {/*<h2>*/}
+          {/*  {breeds.length > 1 && "Types of "}*/}
+          {/*  <span className="capitalized">{type}:</span>*/}
+          {/*</h2>*/}
+        </header>
+        <section>
           {breeds.map((breed) => {
             return (
-              <Link key={breed.type.toString()} className="blogitem" href={`/dogs/${breed.type.join("/")}`}>
-                <a>
-                  <h3>{[...breed.type].reverse().join(" ")}</h3>
-                  {getBreedImages(breed)}
-                </a>
-              </Link>
+              <article>
+                <Link key={breed.type.toString()} className="blogitem" href={`/dogs/${breed.type.join("/")}`}>
+                  <a>
+                    <h3>{[...breed.type].reverse().join(" ")}</h3>
+                    {getBreedImages(breed)}
+                  </a>
+                </Link>
+              </article>
             );
           })}
-        </>
+        </section>
       </MainStyled>
     </div>
   );
@@ -52,8 +56,8 @@ function getBreedImages(breed) {
       <Image
         className="slideImage nextImage"
         title={[...breed.type].reverse().join(" ")}
-        height="300"
-        width="300"
+        height={300}
+        width={300}
         src={img}
       />
     </span>

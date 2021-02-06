@@ -1,5 +1,5 @@
 import { http_get } from "@twodashes/node/cjs/requests";
-import { sort_objects_by_property } from "@twodashes/universal/umd/sort_objects";
+// import { sort_objects_by_property } from "@twodashes/universal/umd/sort_objects";
 import Head from "next/head";
 import Link from "next/link";
 import { MainStyled } from "src/pages_styled/dogs";
@@ -7,18 +7,17 @@ import DogsCarousel from "src/components/DogsCarousel";
 
 export default function Home({ dogs = [] }) {
   return (
-    <div className="container">
+    <>
       <Head>
         <title>All the dogs</title>
-        <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <MainStyled className="main">
         <header>
-          <h2>All the dogs:</h2>
+          <h2>All the dogs!</h2>
           <p>
-            Scroll down for many more! <span style={{ textShadow: "0 1px 1px rgba(0,0,0,0.5)" }}>👇</span> &thinsp;Click
-            each breed or sub-breed to see more photos.{" "}
+            <span style={{ textShadow: "0 1px 1px rgba(0,0,0,0.5)" }}>👇</span>&thinsp; Click each breed or sub-breed to
+            see more photos.{" "}
           </p>
         </header>
         <section>
@@ -39,7 +38,7 @@ export default function Home({ dogs = [] }) {
           })}
         </section>
       </MainStyled>
-    </div>
+    </>
   );
 }
 
@@ -80,7 +79,7 @@ export async function getStaticProps(context) {
       dogBlogs.push(dog);
     }
     // sort blog items
-    sort_objects_by_property(dogBlogs, "n_types");
+    // sort_objects_by_property(dogBlogs, "n_types");
   }
 
   return {

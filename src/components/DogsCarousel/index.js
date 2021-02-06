@@ -10,6 +10,7 @@ export default class extends React.Component {
     this.carouselRef = React.createRef();
   }
   componentDidMount() {
+    console.log("componentDidMount()");
     /*
      * Mount carousel
      */
@@ -35,8 +36,8 @@ export default class extends React.Component {
             <Image
               className="slideImage nextImage"
               title={[...breed.type].reverse().join(" ")}
-              height="200"
-              width="200"
+              height={200}
+              width={200}
               src={breed.images[0]}
             />
             <span className="slideImageCaption">{!!breed.type[1] && breed.type[1]}</span>
@@ -52,8 +53,12 @@ export default class extends React.Component {
         <div className="horizontal_carousel" ref={this.carouselRef}>
           <div className="slides">{Images}</div>
           <div className="arrows">
-            <span className="arrow prev"><span className="icon-chevron-left-light"/></span>
-            <span className="arrow next"><span className="icon-chevron-right-light"/></span>
+            <span className="arrow prev">
+              <span className="icon-chevron-left-light" />
+            </span>
+            <span className="arrow next">
+              <span className="icon-chevron-right-light" />
+            </span>
           </div>
         </div>
       </StyledComponent>

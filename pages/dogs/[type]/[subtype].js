@@ -18,7 +18,7 @@ export default function Home({ dog = {} }) {
       </Head>
 
       <MainStyled className="main">
-        <p>
+        <header>
           <Link href="/dogs">
             <a>👈👈&nbsp; back to all dogs</a>
           </Link>
@@ -26,11 +26,15 @@ export default function Home({ dog = {} }) {
           <Link href={"/dogs/" + dog.type}>
             <a>👈&nbsp; back to {type}s</a>
           </Link>
-        </p>
-        <h1>
-          {subtype} {type}
-        </h1>
-        {getDogImages(dog)}
+        </header>
+        <section>
+          <article>
+            <h1>
+              {subtype} {type}
+            </h1>
+            {getDogImages(dog)}
+          </article>
+        </section>
       </MainStyled>
     </div>
   );
@@ -43,8 +47,8 @@ function getDogImages(breed) {
       <Image
         className="slideImage nextImage"
         title={[...breed.type].reverse().join(" ")}
-        height="400"
-        width="400"
+        height={400}
+        width={400}
         src={img}
       />
     </span>

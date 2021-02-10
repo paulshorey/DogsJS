@@ -29,9 +29,9 @@ export default function Home({ dog = {} }) {
         </header>
         <section>
           <article>
-            <h1>
+            <h3>
               {subtype} {type}
-            </h1>
+            </h3>
             {getDogImages(dog)}
           </article>
         </section>

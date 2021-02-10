@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="988a247f-1f19-4e7b-b42f-303641f32a33" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/_document.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_document.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dogs/[type]/[subtype].js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/[type]/[subtype].js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dogs/[type]/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/[type]/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/dogs/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/dogs/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/page_dogs.js" beforeDir="false" afterPath="$PROJECT_DIR$/tests/page_dogs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +84,7 @@
       <workItem from="1611620009696" duration="6614000" />
       <workItem from="1611711915264" duration="8541000" />
       <workItem from="1612647738166" duration="4813000" />
-      <workItem from="1612808955663" duration="6472000" />
+      <workItem from="1612808955663" duration="7546000" />
     </task>
     <servers />
   </component>
